@@ -9,7 +9,7 @@
         "EnableDnsHostnames": true,
         "Tags": [{
           "Key": "Name",
-          "Value": "Lab VPC"
+          "Value": "SimpleVPC"
         }]
       }
     },
@@ -18,7 +18,7 @@
       "Properties": {
         "Tags": [{
           "Key": "Name",
-          "Value": "Lab Internet Gateway"
+          "Value": "SimpleVPCIGW"
         }]
       }
     },
