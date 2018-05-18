@@ -1,0 +1,35 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "multi-za redis with cluster mode disabled",
+    "Metadata": {
+
+    },
+    "Parameters": {
+
+    },
+    "Mappings": {
+
+    },
+    "Conditions": {
+
+    },
+    "Resources": {
+        "RedisCluster": {
+            "Type": "AWS::ElastiCache::ReplicationGroup",
+            "Properties": {
+                "AutoMinorVersionUpgrade": "true",
+                "CacheNodeType": "cache.m3.medium",
+                "CacheParameterGroupName": "default.redis3.2",
+                "Engine": "redis",
+                "EngineVersion": "3.2.4",
+                "NumCacheClusters": "3",
+                "ReplicationGroupDescription": "multi-za redis with cluster mode disabled",
+                "ReplicationGroupId": "redis-group"
+            }
+        }
+    },
+
+    "Outputs": {
+
+    }
+}
